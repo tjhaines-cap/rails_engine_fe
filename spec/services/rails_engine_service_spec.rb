@@ -5,7 +5,7 @@ RSpec.describe RailsEngineService do
   describe '#merchants' do
     it 'returns merchants' do
       merchants = RailsEngineService.merchants
-# binding.pry
+
       expect(merchants[:data]).to be_an(Array)
 
       merchants[:data].each do |merchant|

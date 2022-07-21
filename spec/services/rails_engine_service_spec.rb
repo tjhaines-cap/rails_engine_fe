@@ -7,7 +7,7 @@ RSpec.describe RailsEngineService do
       merchants = RailsEngineService.merchants
 
       expect(merchants[:data]).to be_an(Array)
-
+      
       merchants[:data].each do |merchant|
         expect(merchant).to have_key(:id)
         expect(merchant[:type]).to eq("merchant")
